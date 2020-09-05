@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_black">
+
+    <TextView
+        android:id="@+id/word_text_view_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/color_green"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Back off"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="16sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/word_meaning_text_view_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/word_text_view_dialog"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textColor="@color/color_white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="Back off"
+        android:layout_marginTop="8sp"
+        android:layout_marginStart="16sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/word_creation_time_text_view_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/word_meaning_text_view_dialog"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textColor="@color/silver"
+        android:textSize="14sp"
+        tools:text="Back off"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="12sp" />
+
+</RelativeLayout>

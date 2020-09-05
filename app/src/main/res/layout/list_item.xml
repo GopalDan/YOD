@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="145sp"
+    android:layout_height="145sp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10sp"
+    android:background="@drawable/rectangle_shape"
+    android:elevation="0sp">
+
+    <ImageView
+        android:id="@+id/book_mark_image_view"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:src="@drawable/ic_un_bookmark"
+        android:scaleType="centerCrop"
+        android:layout_margin="8sp"
+        android:contentDescription="bookmark the word" />
+
+<TextView
+    android:id="@+id/word_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    tools:text = "Back off"
+    android:textSize="16sp"
+    android:textColor="@color/color_white"
+    android:fontFamily="serif-monospace"
+    android:textStyle="bold"
+    android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/word_meaning_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        tools:text = "bgt"
+        android:textColor="@color/color_white"
+        android:textSize="16sp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="normal"
+        android:layout_below="@id/word_text_view"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/word_creation_time_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        tools:text = "bgt"
+        android:textColor="@color/boulder"
+        android:textSize="12sp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="normal"
+        android:layout_below="@id/word_text_view"
+        android:visibility="gone"/>
+</RelativeLayout>
